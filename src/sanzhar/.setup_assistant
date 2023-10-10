@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: robot_description
+    relative_path: urdf/robot.xacro
+    xacro_args: hand:=true
+  SRDF:
+    relative_path: config/hand_tutorial.srdf
+  CONFIG:
+    author_name: Olzhas
+    author_email: olzhas.mukantayev@nu.edu.kz
+    generated_timestamp: 1695109250

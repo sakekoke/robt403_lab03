@@ -1,0 +1,23 @@
+controller_list:
+  - name: fake_planar_arm_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - motortom2m
+      - joint2
+      - joint4
+      - joint6
+  - name: fake_planar_end_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - end
+  - name: fake_full_robot_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - motortom2m
+      - joint2
+      - joint4
+      - joint6
+      - end
+initial:  # Define initial robot poses.
+  - group: full_robot
+    pose: defaul
